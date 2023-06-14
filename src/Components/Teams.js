@@ -32,6 +32,9 @@ function Teams({ teams, setTeams }) {
     return (
       <div className="teams-container">
         <h1>Teams</h1>
+        <div className="teams-img">
+            <img src="https://cdn-wp.thesportsrush.com/2022/12/77e9fb6f-untitled-design-73.jpg?w=3840&q=60" alt="Teams image" /> 
+        </div>
         <div>
             <select value={selectedOrder} onChange={handleOrderChange}>
                 <option value="Alphabetical">Alphabetical</option>
