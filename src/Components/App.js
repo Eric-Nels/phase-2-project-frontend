@@ -7,5 +7,32 @@ import Drivers from './Drivers';
 import Tracks from './Tracks';
 import '../Styles/App.css';
 
+function App() {
+
+  const [teams, setTeams] = useState([]);
+  const [drivers, setDrivers] = useState([]);
+  const [tracks, setTracks] = useState([]);
+  
+  return (
+    <div className="App">
+      <Navbar />
+      <Switch>
+        <Route path='/teams'>
+          <Teams teams={teams} setTeams={setTeams}/>
+        </Route>
+        <Route path='/drivers'>
+          <Drivers drivers={drivers} setDrivers={setDrivers}/>
+        </Route>
+        <Route path='/tracks'>
+          <Tracks tracks={tracks} setTracks={setTracks}/>
+        </Route>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+
 
 export default App;
