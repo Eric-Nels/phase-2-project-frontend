@@ -11,8 +11,10 @@ function Drivers({ drivers, setDrivers }) {
    
             if(selectedOrder === 'Team') {
                 sortedDrivers = [...drivers].sort((a, b) => a.team.localeCompare(b.team));
-            } else if (selectedOrder === "Standing") {
+            } else if (selectedOrder === "Standing (Decending)") {
                 sortedDrivers = [...drivers].sort((a, b) => b.standing - a.standing);
+            } else if (selectedOrder === "Standing (Ascending)") {
+                sortedDrivers = [...drivers].sort((a, b) => a.standing - b.standing);
             } else {
                 sortedDrivers = drivers;
             }
@@ -34,7 +36,8 @@ function Drivers({ drivers, setDrivers }) {
             <select value={selectedOrder} onChange={handleOrderChange}>
                 <option value=''>Select Order</option>
                 <option value='Team'>Teams</option>
-                <option value='Standing'>Standing</option>
+                <option value='Standing (Decending)'>Standing (Decending)</option>
+                <option value='Standing (Ascending)'>Standing (Ascending)</option>
             </select>
         </div>      
         <div className="drivers-container">
