@@ -29,6 +29,9 @@ function Tracks({tracks, setTracks}) {
     return(
         <div className="tracks-page">
             <h1>Tracks</h1>
+            <div className="calendar">
+                <img src='https://e0.365dm.com/22/12/2048x1152/skysports-f1-calendar-2023_5983621.png' alt='2023 Calender img' />
+            </div>    
             <form className="NewTrack" onSubmit={handleSubmit}>
                 <label> Track Location:
                     <input type="text"

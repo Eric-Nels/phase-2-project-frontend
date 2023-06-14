@@ -16,3 +16,9 @@
 .track-card p {
     color: gold
 }
+
+.calendar img{
+    margin-bottom: 20px;
+    width: 1400px;
+    height: 500px; 
+}
