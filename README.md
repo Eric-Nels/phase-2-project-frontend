@@ -21,8 +21,8 @@ Welcome to the 2023 Formula 1 Season Tracker! This website allows you to stay up
 
 To run the 2023 Formula 1 Season Tracker website locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/f1-season-tracker.git`
-2. Navigate to the project directory: `cd f1-season-tracker`
+1. Clone the repository: `git clone git@github.com:Eric-Nels/phase-2-project-frontend.git`
+2. Navigate to the project directory: `cd phase-2-project-frontend`
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm start`
 5. Open the website in your browser at `http://localhost:3000`
