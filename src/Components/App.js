@@ -6,3 +6,6 @@ import Teams from './Teams';
 import Drivers from './Drivers';
 import Tracks from './Tracks';
 import '../Styles/App.css';
+
+
+export default App;
