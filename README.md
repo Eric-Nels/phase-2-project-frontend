@@ -1,3 +1,38 @@
+# 2023 Formula 1 Season Tracker
+
+Welcome to the 2023 Formula 1 Season Tracker! This website allows you to stay updated with the latest information about the Formula 1 season, including teams, drivers, and race tracks.
+
+## Features
+
+- Home Page: Provides an overview of the website and its features.
+- Navbar: Allows easy navigation between different pages.
+- Teams Page: Displays all the participating teams in the 2023 season along with their standings.
+- Drivers Page: Shows a list of drivers for the season along with their standings.
+- Tracks Page: Provides information about the tracks raced on this season and the winners.
+
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces.
+- React Router: A library for routing in React applications.
+- CSS: Used for styling the website.
+- REST API: Consumed to fetch data about teams, drivers, and tracks.
+
+## Getting Started
+
+To run the 2023 Formula 1 Season Tracker website locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/f1-season-tracker.git`
+2. Navigate to the project directory: `cd f1-season-tracker`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open the website in your browser at `http://localhost:3000`
+
+## Contributing
+https://www.sportmonks.com/formula-one-api/formula-1-tracks/
+https://twitter.com/Motorsport
+https://thesportsrush.com/f1-news-f1-team-principals-2023-who-are-the-people-in-charge-of-all-ten-formula-1-teams-for-the-2023-season/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
