@@ -1,0 +1,20 @@
+/* Navbar container */
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+.navbar a {
+    text-align: fill;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: whitesmoke
+}
+
+.navbar a.active {
+    color: red
+}
+
+
