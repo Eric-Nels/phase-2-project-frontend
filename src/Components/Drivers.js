@@ -17,19 +17,15 @@ function Drivers({ drivers, setDrivers }) {
                 sortedDrivers = drivers;
             }
 
-
             setDrivers(sortedDrivers);
         }
-
 
         filterDrivers();
     }, [selectedOrder]);
 
-
     function handleOrderChange(e) {
             setSelectedOrder(e.target.value);
     }
-
 
     return(
     <div>
