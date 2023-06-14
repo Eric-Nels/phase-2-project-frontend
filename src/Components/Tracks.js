@@ -2,6 +2,29 @@ import React, { useState } from "react";
 import "../Styles/Tracks.css"
 
 function Tracks({tracks, setTracks}) {
+    const [name, setName] = useState('')
+    const [image, setImage] = useState('')
+    const [winner, setWinner] =useState('')
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        const trackData = {
+            name: name,
+            image: image,
+            winner: winner
+        };
+        fetch('http://localhost:3000/tracks', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body:JSON.stringify(trackData),
+        })
+            .then((r) => r.json())
+            .then((newTrack) => onAddTrack(newTrack))
+    }
+
+    function onAddTrack(newTrack) {
+        setTracks([...tracks, newTrack])
+    }
    
     return(
         <div className="tracks-page">
