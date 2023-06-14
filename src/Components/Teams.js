@@ -4,7 +4,31 @@ import "../Styles/Teams.css";
 function Teams({ teams, setTeams }) {
 
     const [selectedOrder, setSelectedOrder] = useState("");
-  
+
+    useEffect(() => {
+        function sortTeams() {
+          let sortedTeams;
+    
+          if (selectedOrder === "Alphabetical") {
+            sortedTeams = [...teams].sort((a, b) =>
+              a.name.localeCompare(b.name)
+            );
+          } else if (selectedOrder === "Standing") {
+            sortedTeams = [...teams].sort((a, b) => b.standing - a.standing);
+          } else {
+            sortedTeams = teams;
+          }
+    
+          setTeams(sortedTeams);
+        }
+    
+        sortTeams();
+      }, [teams, selectedOrder, setTeams]);
+    
+      function handleOrderChange(e) {
+        setSelectedOrder(e.target.value);
+      }
+    
     return (
       <div className="teams-container">
         <h1>Teams</h1>
