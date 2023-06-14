@@ -1,0 +1,18 @@
+.tracks-container {
+    background-color: black;
+}
+
+
+.track-card h2 {
+    color: red
+}
+
+
+.track-card img {
+    background-color: whitesmoke;
+}
+
+
+.track-card p {
+    color: gold
+}
