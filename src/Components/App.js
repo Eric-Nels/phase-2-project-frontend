@@ -12,7 +12,33 @@ function App() {
   const [teams, setTeams] = useState([]);
   const [drivers, setDrivers] = useState([]);
   const [tracks, setTracks] = useState([]);
-  
+
+  useEffect(() => {
+    fetch('http://localhost:3000/teams')
+    .then((r)=>r.json())
+    .then((data)=> {
+      setTeams(data)
+    })
+  }, [])
+
+
+  useEffect(() => {
+    fetch('http://localhost:3000/drivers')
+    .then((r)=>r.json())
+    .then((data)=> {
+      setDrivers(data)
+    })
+  }, [])
+
+
+  useEffect(() => {
+    fetch('http://localhost:3000/tracks')
+    .then((r)=>r.json())
+    .then((data)=> {
+      setTracks(data)
+    })
+  }, [])
+
   return (
     <div className="App">
       <Navbar />
