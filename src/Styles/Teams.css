@@ -18,6 +18,13 @@
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 10px;
+  margin-top: 20px;
   display: inline-block;
   width: 200px;
+}
+
+.teams-img img {
+  width: 1300px;
+  height: 600px;
+  margin-right: 100px;
 }
